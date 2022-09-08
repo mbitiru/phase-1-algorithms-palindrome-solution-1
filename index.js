@@ -1,9 +1,31 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Write your algorithm here}
+  if(word.length < 2) return true
+
+  let start = 0
+  let end = word.length - 1
+
+  while(start <= end){
+    if(word[start] != word[end]){
+      return false
+    }
+    start++
+    end--
+  }
+
+    return true
+  
+
 }
 
+
 /* 
-  Add your pseudocode here
+  Add your pseudocode here:
+  loops through the string,
+  checks if the last element is not equal to element at the beginning,
+  if the elements do not match it returns false
+  else true
+  then increment start and decrement end
 */
 
 /*
